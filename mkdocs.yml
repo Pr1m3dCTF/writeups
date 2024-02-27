@@ -1,0 +1,59 @@
+site_name: pr1m3d writeups
+site_url: https://Pr1m3dCTF.github.io/writeups
+repo_name: 'Pr1m3dCTF/writeups'
+edit_uri: 'blob/master/docs/'
+repo_url: 'https://github.com/Pr1m3dCTF/writeups'
+
+
+theme:
+  name: material
+  palete:
+    primary: green
+    accent: blue
+  features:
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+
+plugins:
+  - glightbox
+
+nav:
+  - 2023:
+    - Cyber Apocalypse 2023: 
+      - crypto: 
+        - inside the matrix: 2023/cyber-apocalypse-2023/crypto/inside_the_matrix.md
+        - multipage recyclings: 2023/cyber-apocalypse-2023/crypto/multipage_recyclings.md
+        - perfect synchronization: 2023/cyber-apocalypse-2023/crypto/perfect_synchronization.md
+        - small steps: 2023/cyber-apocalypse-2023/crypto/small_steps.md
+      - blockchain:
+        - navigating the unknown: 2023/cyber-apocalypse-2023/blockchain/navigating_the_unknown.md
+        - shooting 101: 2023/cyber-apocalypse-2023/blockchain/shooting_101.md
+      - web:
+        - passman: 2023/cyber-apocalypse-2023/web/passman.md
+      - hardware: 
+        - hm74: 2023/cyber-apocalypse-2023/hardware/hm74.md
+      - forensics:
+        - packet cyclone: 2023/cyber-apocalypse-2023/forensics/packet_cyclone.md
+  - 2024:
+    - Snapp CTF 2024:
+      - crypto: 
+        - Cryptos: 2024/Snapp-ctf-2024/crypto/Cryptos.md
+        - Bombastic: 2024/Snapp-ctf-2024/crypto/Bombastic.md
+        - Blex: 2024/Snapp-ctf-2024/crypto/Blex.md
+        - Grail: 2024/Snapp-ctf-2024/crypto/Grail.md
+      - web:
+        - Snapp cat: 2024/Snapp-ctf-2024/web/Snappcat.md
+        - Snapp fal: 2024/Snapp-ctf-2024/web/Snappfal.md
