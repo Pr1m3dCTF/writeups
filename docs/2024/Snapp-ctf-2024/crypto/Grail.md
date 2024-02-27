@@ -34,7 +34,7 @@ print(f'n = {pubkey}')
 print(f'c = {enc}')
 ```
 
-this challenge is about generating two prime factors and a public modulus `n` like `n = p * q * q` and encrypt a flag with it
+this challenge is about generating two prime factors and a public modulus `n` like `n = p * q * q` and encrypt a flag with it\
 the prime generation part is interesting let's see what's happening
 
 
@@ -56,7 +56,7 @@ p,q = x1 * x2 * x3 * x4 * x5 * ... * x16 + 1
 2**31 < x1,x2,x3,...x16 < 2**32
 ```
 
-in mathematics we call these numbers smooth numbers. in another words both `p-1` and `q-1` have prime factors less than `4294967296` which are called 32-bit smooth numbers. you can read about smooth numbers [here](https://en.wikipedia.org/wiki/Smooth_number).
+in mathematics we call these numbers smooth numbers. in another words both `p-1` and `q-1` have prime factors less than `4294967296` which are called 32-bit smooth numbers. you can read about smooth numbers [here](https://en.wikipedia.org/wiki/Smooth_number).\
 using of smooth numbers when generating prime factors is not a safe idea. because there is an algorithm called **pollard p-1** which is about factoring a composite number `n` while all its prime factors `p-1` are  power-smooth. and this smoothness is not that large (here it is 32 bit which is reasonable) 
 
 # 2. Solution
@@ -93,7 +93,7 @@ a**(p-1) % p = 1
 or
 a**(p-1) -1 = p*r
 ```
-In other words `a**(p-1) - 1` has two factors `p,r` and `p` is prime
+In other words `a**(p-1) - 1` has two factors `p,r` and `p` is prime\
 We can also multiply `p-1` with `k`:
 ```python
 a**[k*(p-1)] % p = 1
@@ -109,15 +109,19 @@ B = k*(p-1)
 gcd((a**B)-1, n) = p
 ```
 
-If we can calculate `B` and choose any integer `a` co-prime to `n`(2 is the best choice), then we can find `p` with `gcd` operation. simple huh?! But how to find `B`
+$\text{gcd}(a^{k \cdot (p-1)} - 1, n) = p$
+$\text{B} = k \cdot (p-1)$
+$\text{gcd}(a^B - 1, n) = p$
+
+If we can calculate `B` and choose any integer `a` co-prime to `n`(2 is the best choice), then we can find `p` with `gcd` operation. simple huh?! But how to find `B`\
 We know that:
 ```python
 B = k*(p-1)
 p-1 = p1 * p2 * p3 ... * px
 ```
 
-And we know that `p-1` is `power-smooth` which means that all factors of `p-1`(`p1, p2, ..., px`) are less than `4294967296`
-So if we choose `B=1*2*3*4*...*4294967296` and calculate that we can assure that `B` has `p` inside its factor and gcd of `a**B - 1` with `n` will result in `p` which is one of the factors. 
+And we know that `p-1` is `power-smooth` which means that all factors of `p-1`(`p1, p2, ..., px`) are less than `4294967296`\
+So if we choose `B=1*2*3*4*...*4294967296` and calculate that we can assure that `B` has `p` inside its factor and gcd of `a**B - 1` with `n` will result in `p` which is one of the factors.
 
 All sounds cool! but is it easy to calculate `factorial(4294967296)` specially in python? definitely not! it will take a looong time and memory to find those primes. instead of that I used ecm utils, which is a powerful and optimal integer factorization tools, you can also use yafu which it also uses ecm.
 
@@ -143,7 +147,7 @@ Report your potential champion to Paul Zimmermann <zimmerma@loria.fr>
 
 ![Pasted image 20240224235930.png](./Pasted image 20240224235930.png)
 
-excellent, we found the prime factor `p` and a composite factor which is `q**2`
+excellent, we found the prime factor `p` and a composite factor which is `q**2`\
 now let's write our final code to decrypt the flag. To be honest there is no nee to calculate `q`. with just `p` and its relevant `d` you can find the flag because this is a `3-prime` variant of RSA.
 
 ```bash
