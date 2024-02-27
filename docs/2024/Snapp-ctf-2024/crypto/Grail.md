@@ -34,7 +34,7 @@ print(f'n = {pubkey}')
 print(f'c = {enc}')
 ```
 
-this challenge is about generating two prime factors and a public modulus `n` like `n = p * q * q` and encrypt a flag with it\
+this challenge is about generating two prime factors and a public modulus `n` like `n = p * q * q` and encrypt a flag with it<br>
 the prime generation part is interesting let's see what's happening
 
 
@@ -117,7 +117,7 @@ $\text{B} = k \cdot (p-1)$
 $\text{gcd}(a^B - 1, n) = p$
 </center>
 
-If we can calculate `B` and choose any integer `a` co-prime to `n`(2 is the best choice), then we can find `p` with `gcd` operation. simple huh?! But how to find `B`\
+If we can calculate `B` and choose any integer `a` co-prime to `n`(2 is the best choice), then we can find `p` with `gcd` operation. simple huh?! But how to find `B`.<br>
 We know that:
 
 <center>
