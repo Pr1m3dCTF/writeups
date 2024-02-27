@@ -34,13 +34,14 @@ print(f'c = {c}')
 # 2. Solution 
 
 the code is pretty much simple, it's encoding a message in these steps:
-1. it generates a (1024>>6) or 16 bit random number [32768, 65536]
+
+1. it generates a `(1024>>6)` or 16 bit random number [32768, 65536]
 2. multiply flag decimal value by it
 3. encode it using this algorithm
-	1. x = n, y = 1
-	2. x = (x+y) / 2, y = n/x
-	3. repeat until x >= y + r -> (r is very small value near to zero)
-4. round x by p floating point which is 1024+len(n) + 2
+	1. $x = n, y = 1$
+	2. $x = (x+y) / 2$ , $y = n/x$
+	3. repeat until $x >= y + r$ : (r is very small value near to zero)
+4. round `x` by `p` floating point which is $1024 + len(n) + 2$
 5. eliminate the `.` and reverse it
 
 if we switch to dynamic approach we can see that the loop is about taking square root of initial value

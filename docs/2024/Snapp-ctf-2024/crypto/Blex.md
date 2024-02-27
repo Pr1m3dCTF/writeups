@@ -77,14 +77,14 @@ let's break it down to see what is happening under the hood
 
 1. consider our seed as `s`
 2. it casts it to decimal base as `v` and the hex value length as `l`
-3. then it generates `e` as  `(64-l) * 16` (e is dependent on `l`, the larger the `l` or seed length, the smaller value for `e` )
-4. two values `u,w` are generated: `u = v * 2**e` and `w = 2 ** (e/2)` (`u` and `v` both are dependent on `e`, it means the larger seed length -> the smaller `e` -> the smaller `u` and `w`)
+3. then it generates `e` as  $(64-l) * 16$ (e is dependent on `l`, the larger the `l` or seed length, the smaller value for `e` )
+4. two values `u,w` are generated: $u = v * 2^{e}$ and $w = 2^{(e/2)}$ (`u` and `v` both are dependent on `e`, it means the larger seed length -> the smaller `e` -> the smaller `u` and `w`)
 5. then it enters a for loop
 	1. first it generates a random `r` in range `[1,w)` -> not including `w` itself 
-	2. then the code calculates a `p` like: `p = r + u`
+	2. then the code calculates a `p` like: $p = r + u$
 	3. then it enters a loop 
-		1. first it generates a pair `(x,y)` in length of `bit_len(p)/4` bit
-		2. then it calculates `P` and `Q` like: `P = x * p | 1` and `Q = y * p | 1` -> `|` is OR bit-wise operator means if `xp` or `yp` are even (0 value for LSB bit) it will make it `1` . so it will be `xp + 1` or `xp` . it all depends on if `xp` is even or odd. we know that `P` and `Q` should be prime so they can not be in form of `P = xp`  and `Q = yp` so they should be in form of `P = xp + 1` and `Q = yp + 1`
+		1. first it generates a pair `(x,y)` in length of $bitlen(p)/4$ bit
+		2. then it calculates `P` and `Q` like: $P = x * p | 1$ and $Q = y * p | 1$ -> `|` is OR bit-wise operator means if $xp$ or $yp$ are even (0 value for LSB bit) it will make it `1` . so it will be $xp + 1$ or $xp$. it all depends on if $xp$ is even or odd. we know that `P` and `Q` should be prime so they can not be in form of $P = xp$  and $Q = yp$ so they should be in form of $P = xp + 1$ and $Q = yp + 1$
 		3. return `P` and `Q` when they both are prime and these are our RSA factors
 
 
@@ -103,13 +103,18 @@ our `v` and `e` are the smallest possible and we can see the factors are very sm
 because our `n` is very small (`n<m`) so we can not get the encrypted flag.
 let's see how n is generated based on our seeds
 
-```python
-n = P * Q
-P = p*x + 1
-Q = p*y + 1
-n = (p*x + 1) * (p*y + 1)   --->    2 ** [(logp / 4)-1] < x,y < 2**[logp / 4]
-n = (p**2)*(x*y) + p*x + p*y + 1
-```
+
+<center>
+$n = P \cdot Q$
+
+$P = p \cdot x + 1$
+
+$Q = p \cdot y + 1$
+
+$n = (p \cdot x + 1) \cdot (p \cdot y + 1) \quad \longrightarrow \quad 2^{\left(\frac{\log_2{p}}{4}-1\right)} < x,y < 2^{\frac{\log_2{p}}{4}}$
+
+$n = (p^2) \cdot (x \cdot y) + p \cdot x + p \cdot y + 1$
+</center>
 
 The solution I was thinking about was about first find `p` then find `x,y` and calculate `P,Q`. I was thinking about brute-forcing them but it only is possible when they are small.
 let's see how we can feed our algorithm with a seed that `p,x,y` are small meanwhile `P` and `Q` are large enough such that `n > m`.
@@ -117,23 +122,27 @@ let's see how we can feed our algorithm with a seed that `p,x,y` are small meanw
 The thing I was sure about to consider `l` as maximum possible value (60) because it results in small `e` then small `w` we know  `w` is only dependent on `l` and `p` is dependent on `r` and `u` because we have the value `u` we only need `1 < r < w` to find `p`. so the larger `l` leads to smaller `e` and smaller `w` and smaller `r` and makes it easier to find `r`
 if we consider `l` as 60 the `w` will value be like this
 
-```python
-l = 60
-e = (64 - l) << 4
-e = 4 << 4
-e = 64
+<center>
+$l = 60$
 
-w = 2 ** (e >> 1)
-w = 2 ** (32)
-w = 4294967296
+$e = (64-l)*2^{4}$
 
-1 < r < 4294967296
+$e = 4*2^{4}$
 
-p = u + r
-we have u we only need to predict r to find p
-```
+$e = 64$
 
-after some trial/error I found this value which generates reasonable value for p that `P*Q > m` and also `x,y` are not large
+$w = 2^{(e/2)}$
+
+$w = 2^{32}$
+
+$w = 4294967296$
+
+$1 < r < 4294967296$
+</center>
+
+we have `u` we only need to predict r to find p
+
+after some trial/error I found this value which generates reasonable value for p that $P*Q > m$ and also $x,y$ are not large
 
 ```
 000000000000000000000000000000000000000000000000027aaaaaaaa
@@ -173,9 +182,15 @@ n = (p**2)*(x*y) + p*x + p*y + 1
 if (n-1) % (u+r) == 0
 # p = u + r
 ```
+$n = (p^2)(x \cdot y) + p \cdot x + p \cdot y + 1$
+
+We can verify correct $r$ like this:
+
+If $(n - 1) \mod (u + r) = 0$, then $p = u + r$.
+
 
 after find the correct `r` we can brute force and find `x,y` like this
-we know that `P = x*p + 1` so `n` divides `x*p + 1` so `n-1` divides both  `x` and `p`
+we know that $P = x*p + 1$ so `n` divides $x*p + 1$ so $n-1$ divides both  `x` and `p`
 
 ```python
 bits = p.bit_length() >> 2 # bits = 25

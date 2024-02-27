@@ -47,10 +47,10 @@ At the first view I couldn't understand the prime generation algorithm neither i
 
 ![Pasted image 20240224010224.png](./Pasted image 20240224010224.png)
 
-so it is all about [mersenne primes](https://en.wikipedia.org/wiki/Mersenne_prime), after searching about them it seems they are primes that are in form of `2**n - 1`. I generated two primes with this algorithm to examine them
+so it is all about [mersenne primes](https://en.wikipedia.org/wiki/Mersenne_prime), after searching about them it seems they are primes that are in form of $2^{n} - 1$. I generated two primes with this algorithm to examine them
 ![Pasted image 20240224010819.png](./Pasted image 20240224010819.png)
 
-it seems these numbers are not form of `2**n - 1` but the number 1 may be different for them so I used this code to find what form they are in:
+it seems these numbers are not form of $2^{n} - 1$ but the number 1 may be different for them so I used this code to find what form they are in:
 
 ```python
 p = 858099707516326214372737599885174152158679412517913176174307932398192897924707006515319955082681819372162038923935107254640248499964580476571753536389382243
@@ -65,7 +65,7 @@ for i in range(-1000, 10000):
 
 ![Pasted image 20240224011454.png](./Pasted image 20240224011454.png)
 
-so in this example we see that p is in form of `2**n + 99` and q is in form of `2**n - 65`
-Finally I used RsaCtfTool to decrypt the c with mersenne primes method
+so in this example we see that p is in form of $2^{n} + 99$ and q is in form of $2^{n} - 65$
+Finally I used RsaCtfTool to decrypt the `c` with mersenne primes method
 
 ![Pasted image 20240224013825.png](./Pasted image 20240224013825.png)

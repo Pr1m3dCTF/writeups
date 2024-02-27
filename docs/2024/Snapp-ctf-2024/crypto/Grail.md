@@ -49,24 +49,23 @@ def make_prime(nbit):
       return p
 ```
 
-if we look at the algorithm, the prime generation isn't trivial safe method and is like this
+if we look at the algorithm, the prime generation isn't trivial safe method and is like this:
 
-```python
-p,q = x1 * x2 * x3 * x4 * x5 * ... * x16 + 1
-2**31 < x1,x2,x3,...x16 < 2**32
-```
+<center>
+$p, q = x_1 \cdot x_2 \cdot x_3 \cdot x_4 \cdot x_5 \cdot \ldots \cdot x_{16} + 1$
 
-in mathematics we call these numbers smooth numbers. in another words both `p-1` and `q-1` have prime factors less than `4294967296` which are called 32-bit smooth numbers. you can read about smooth numbers [here](https://en.wikipedia.org/wiki/Smooth_number).\
+$2^{31} < x_1, x_2, x_3, \ldots, x_{16} < 2^{32}$
+</center>
+
+in mathematics we call these numbers smooth numbers. in another words both `p-1` and `q-1` have prime factors less than `4294967296` which are called 32-bit smooth numbers. you can read about smooth numbers [here](https://en.wikipedia.org/wiki/Smooth_number).<br>
 using of smooth numbers when generating prime factors is not a safe idea. because there is an algorithm called **pollard p-1** which is about factoring a composite number `n` while all its prime factors `p-1` are  power-smooth. and this smoothness is not that large (here it is 32 bit which is reasonable) 
 
 # 2. Solution
 
 By definition 
-```
-Further, m is called B-powersmooth (or B-ultrafriable) if all prime powers p**v dividing m satisfy:
 
-p**v <= B
-```
+Further, m is called B-powersmooth (or B-ultrafriable) if all prime powers $p^v$ dividing m satisfy: $p^v \leq B$
+
 
 Here we can use `Pollard's p − 1` algorithm because our integer `n`'s factor `p-1`,`q-1` are `4294967296-smooth` which satisfies our conditions.
 
@@ -88,40 +87,47 @@ Let's see how this algorithm works
 
 ### Fermat's Little Theorem
 We know that for every prime number `p` and a random number `a` co-prime to `p` we can write
-```python
-a**(p-1) % p = 1
+
+<center>
+$a^{(p-1)} \equiv 1 \pmod{p}$
+
 or
-a**(p-1) -1 = p*r
-```
-In other words `a**(p-1) - 1` has two factors `p,r` and `p` is prime\
-We can also multiply `p-1` with `k`:
-```python
-a**[k*(p-1)] % p = 1
+
+$a^{(p-1)} - 1 = p \cdot r$
+</center>
+
+In other words $a^{(p-1)} - 1$ has two factors `p,r` and `p` is prime. We can also multiply `p-1` with `k`:
+
+<center>
+$a^{k \cdot (p-1)} \equiv 1 \pmod{p}$
+
 or
-a**[k*(p-1)] -1 = p*s
-```
+
+$a^{k \cdot (p-1)} - 1 = p \cdot s$
+</center>
 
 ### The proof
 From previous equations we can conclude:
-```python
-gcd(a**[k*(p-1)]-1 = p*s, n) = p
-B = k*(p-1)
-gcd((a**B)-1, n) = p
-```
 
+<center>
 $\text{gcd}(a^{k \cdot (p-1)} - 1, n) = p$
+
 $\text{B} = k \cdot (p-1)$
+
 $\text{gcd}(a^B - 1, n) = p$
+</center>
 
 If we can calculate `B` and choose any integer `a` co-prime to `n`(2 is the best choice), then we can find `p` with `gcd` operation. simple huh?! But how to find `B`\
 We know that:
-```python
-B = k*(p-1)
-p-1 = p1 * p2 * p3 ... * px
-```
 
-And we know that `p-1` is `power-smooth` which means that all factors of `p-1`(`p1, p2, ..., px`) are less than `4294967296`\
-So if we choose `B=1*2*3*4*...*4294967296` and calculate that we can assure that `B` has `p` inside its factor and gcd of `a**B - 1` with `n` will result in `p` which is one of the factors.
+<center>
+$B = k \cdot (p-1)$
+
+$p-1 = p_1 \cdot p_2 \cdot p_3 \cdot \ldots \cdot p_x$
+</center>
+
+And we know that `p-1` is `power-smooth` which means that all factors of `p-1`(`p1, p2, ..., px`) are less than `4294967296`<br>
+So if we choose B=$1.2.3.4.....4294967296$ and calculate that we can assure that `B` has `p` inside its factor and gcd of $a^{B} - 1$ with `n` will result in `p` which is one of the factors.
 
 All sounds cool! but is it easy to calculate `factorial(4294967296)` specially in python? definitely not! it will take a looong time and memory to find those primes. instead of that I used ecm utils, which is a powerful and optimal integer factorization tools, you can also use yafu which it also uses ecm.
 
@@ -147,7 +153,7 @@ Report your potential champion to Paul Zimmermann <zimmerma@loria.fr>
 
 ![Pasted image 20240224235930.png](./Pasted image 20240224235930.png)
 
-excellent, we found the prime factor `p` and a composite factor which is `q**2`\
+excellent, we found the prime factor `p` and a composite factor which is `q**2`<br>
 now let's write our final code to decrypt the flag. To be honest there is no nee to calculate `q`. with just `p` and its relevant `d` you can find the flag because this is a `3-prime` variant of RSA.
 
 ```bash
