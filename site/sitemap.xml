@@ -2,107 +2,157 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/blockchain/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/blockchain/navigating_the_unknown/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/blockchain/shooting_101/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/crypto/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/crypto/inside_the_matrix/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/crypto/multipage_recyclings/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/crypto/perfect_synchronization/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/crypto/small_steps/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/forensics/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/forensics/packet_cyclone/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/hardware/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/hardware/hm74/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/web/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2023/cyber-apocalypse-2023/web/passman/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/</loc>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/crypto/Blex/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/crypto/Bombastic/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/crypto/Cryptos/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/crypto/Grail/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/web/Snappcat/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/forensics/snapp_report/</loc>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/web/Snappfal/</loc>
-         <lastmod>2024-02-27</lastmod>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/misc/prying_eyes/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/osint/snapp_report/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/pwn/snapp_admin/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/pwn/snapp_shell/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/rev/blink/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/rev/turnob/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/rev/visits/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/web/snapp_cat/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/web/snapp_fal/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/web/welcome/</loc>
+         <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

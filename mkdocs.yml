@@ -26,12 +26,18 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+
 
 
 plugins:
   - glightbox
-  - tags:
-      tags_file: tags.md
+  # - tags:
+  #     tags_file: tags.md
 
 nav:
   - 2023:
@@ -57,6 +63,15 @@ nav:
         - Bombastic: 2024/Snapp-ctf-2024/crypto/Bombastic.md
         - Blex: 2024/Snapp-ctf-2024/crypto/Blex.md
         - Grail: 2024/Snapp-ctf-2024/crypto/Grail.md
+      - pwn:
+        - Snapp admin: 2024/Snapp-ctf-2024/pwn/snapp_admin.md
+        - Snapp shell: 2024/Snapp-ctf-2024/pwn/snapp_shell.md
+      - rev:
+        - Visits: 2024/Snapp-ctf-2024/rev/visits.md
+        - TurnOB: 2024/Snapp-ctf-2024/rev/turnob.md
+        - Blink: 2024/Snapp-ctf-2024/rev/blink.md
       - web:
-        - Snapp cat: 2024/Snapp-ctf-2024/web/Snappcat.md
-        - Snapp fal: 2024/Snapp-ctf-2024/web/Snappfal.md
+        - Snapp cat: 2024/Snapp-ctf-2024/web/snapp_cat.md
+        - Snapp fal: 2024/Snapp-ctf-2024/web/snapp_fal.md
+      - forensics:
+        - Snapp Report: 2024/Snapp-ctf-2024/forensics/snapp_report.md

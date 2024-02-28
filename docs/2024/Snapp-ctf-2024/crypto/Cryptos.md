@@ -40,7 +40,7 @@ the code is pretty much simple, it's encoding a message in these steps:
 3. encode it using this algorithm
 	1. $x = n, y = 1$
 	2. $x = (x+y) / 2$ , $y = n/x$
-	3. repeat until $x >= y + r$ : (r is very small value near to zero)
+	3. repeat until $x \geq y + r$ : (r is very small value near to zero)
 4. round `x` by `p` floating point which is $1024 + len(n) + 2$
 5. eliminate the `.` and reverse it
 
