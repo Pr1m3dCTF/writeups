@@ -111,7 +111,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/osint/snapp_report/</loc>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/osint/snapp_bounties/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/osint/snapp_customers/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/osint/snapp_records/</loc>
+         <lastmod>2024-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://Pr1m3dCTF.github.io/writeups/2024/Snapp-ctf-2024/osint/snapp_saving/</loc>
          <lastmod>2024-02-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
