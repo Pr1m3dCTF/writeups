@@ -1,8 +1,3 @@
----
-title: snapp ctf 2024 writeups
-description: Here we publish our writeups for snapp ctf 2024
----
-
 # snapp ctf 2024 writeups
 
 ![scoreboard](./scoreboard.png)

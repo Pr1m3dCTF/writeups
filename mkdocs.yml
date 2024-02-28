@@ -48,6 +48,7 @@ plugins:
       description: Here we publish some of our writeups for CTF contests
       image: docs/favicon.png
   - social:
+      cards: true
       cards_layout: default
 
 
