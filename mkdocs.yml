@@ -47,7 +47,9 @@ plugins:
       title: Pr1m3d CTF writeups
       description: Here we publish some of our writeups for CTF contests
       image: docs/favicon.png
-  - social
+  - social:
+      cards_layout: default
+
 
 
 nav:
