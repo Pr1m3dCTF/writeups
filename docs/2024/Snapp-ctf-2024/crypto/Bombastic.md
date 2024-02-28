@@ -1,4 +1,4 @@
-# 1. Bombastic
+# Bombastic
 
 ```python
 #!/usr/bin/env python3
@@ -42,7 +42,7 @@ print(f'enc = {enc}')
 
 ```
 
-# 2. Solution
+# Solution
 At the first view I couldn't understand the prime generation algorithm neither in static nor dynamic approach. So I passed the `n` to [RsaCtfTool](https://github.com/RsaCtfTool/RsaCtfTool) to see what is the issue about generating primes in this strange way. this is the output of the tool
 
 ![Pasted image 20240224010224.png](./Pasted image 20240224010224.png)

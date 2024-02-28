@@ -1,4 +1,4 @@
-# 1. Snapp cat
+# Snapp cat
 
 First of all when we browse the given url we're faced with a swagger documentation. 
 I tried to call some of them but all seemed to require authentication except the register and login endpoints.
@@ -13,7 +13,7 @@ Then I called /api/cat/create with random values and it showed me an error sayin
 It returned the base64 encoded index.js file. I noticed an endpoint like /secret and tried to call it but it didn't work. So I took a closer look and noticed that a claim should be set in my JWT that isn't set by default. So I took the JWT secret from index.js file and generated a new token with required property and called the secret endpoint again. 
 Finally I was awarded with the flag.
 
-# 2. Solution
+# Solution
 
 1. register
 ![Pasted image 20240225234831.png](./Pasted image 20240225234831.png)

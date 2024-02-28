@@ -1,4 +1,4 @@
-# 1. Grail
+# Grail
 
 [**Grail**](https://snappctf.com/tasks/grail_d142a1301e9e48d2d166735c47cf61d451cb7826.txz) cryptosystem employs elementary math to safeguard valuable secrets. Despite strengths, it harbors vulnerabilities requiring careful consideration.
 
@@ -60,7 +60,7 @@ $2^{31} < x_1, x_2, x_3, \ldots, x_{16} < 2^{32}$
 in mathematics we call these numbers smooth numbers. in another words both `p-1` and `q-1` have prime factors less than `4294967296` which are called 32-bit smooth numbers. you can read about smooth numbers [here](https://en.wikipedia.org/wiki/Smooth_number).<br>
 using of smooth numbers when generating prime factors is not a safe idea. because there is an algorithm called **pollard p-1** which is about factoring a composite number `n` while all its prime factors `p-1` are  power-smooth. and this smoothness is not that large (here it is 32 bit which is reasonable) 
 
-# 2. Solution
+# Solution
 
 By definition 
 

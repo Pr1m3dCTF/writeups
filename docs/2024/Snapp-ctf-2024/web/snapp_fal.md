@@ -1,4 +1,4 @@
-# 1. Snapp fal
+# Snapp fal
 
 ```
 From now on Snapp can offer you fals if you want.
@@ -28,7 +28,7 @@ when we visit the website we encounter a page like this
 
 ![Pasted image 20240225002811.png](./Pasted image 20240225002811.png)
 
-# 2. Solution
+# Solution
 
 if we click on the button it will be like this for a few seconds and the redirects us to previous page
 
