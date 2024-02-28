@@ -38,8 +38,13 @@ markdown_extensions:
 
 plugins:
   - glightbox
-  # - tags:
-  #     tags_file: tags.md
+  - search
+  - tags:
+      title: Pr1m3d CTF writeups
+      description: Here we publish some of our writeups for CTF contests
+      image: docs/favicon.png
+  - social
+
 
 nav:
   - 2023:
