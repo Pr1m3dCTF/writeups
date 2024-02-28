@@ -16,9 +16,13 @@ theme:
     - content.code.copy
     - content.code.select
     - content.code.annotate
+    - navigating.tabs
+    - navigating.sections
+    - navigating.top
+    - search.suggest
+    - search.highlight
   favicon: favicon.png
-
-
+  
 
 markdown_extensions:
   - pymdownx.highlight:
