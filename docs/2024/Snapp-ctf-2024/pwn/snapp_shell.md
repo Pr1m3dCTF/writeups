@@ -1,4 +1,4 @@
-## Description
+## Snapp Shell
 
 ````
 My [**shell**](https://snappctf.com/tasks/snappshell_fc8d87fc117c34914b7c1b1d1255e6305ae9a072.txz) is broken, can you fix it for me? No you can't = )

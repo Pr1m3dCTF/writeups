@@ -1,4 +1,4 @@
-# Challenge Code / Description
+# Blex
 
 [**Blex**](https://snappctf.com/tasks/blex_d5497876fd46f852c5854aae4f4448c7e9320839.txz) cryptosystem, despite its sluggish pace, boasts unparalleled security, resilient against all attacks. Now, examine its unyielding strength.
 

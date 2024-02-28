@@ -1,4 +1,4 @@
-## Description
+## Snapp Admin
 
 ````
 I'm in a hurry and I don't have enough money. Find my [**discount**](https://snappctf.com/tasks/snapp_admin_d2cb1554b1532e3735e4c6f31d8cc396b356083c.txz) code.

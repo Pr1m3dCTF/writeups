@@ -1,4 +1,4 @@
-# 1. Challenge Info
+# 1. Snapp fal
 
 ```
 From now on Snapp can offer you fals if you want.

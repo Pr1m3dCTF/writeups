@@ -1,4 +1,4 @@
-# 1. Challenge Code / Description
+# 1. Snapp cat
 
 First of all when we browse the given url we're faced with a swagger documentation. 
 I tried to call some of them but all seemed to require authentication except the register and login endpoints.

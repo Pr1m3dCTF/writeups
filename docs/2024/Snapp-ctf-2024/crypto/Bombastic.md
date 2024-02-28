@@ -1,4 +1,4 @@
-# 1. Challenge Code / Description
+# 1. Bombastic
 
 ```python
 #!/usr/bin/env python3

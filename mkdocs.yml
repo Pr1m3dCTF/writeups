@@ -73,5 +73,11 @@ nav:
       - web:
         - Snapp cat: 2024/Snapp-ctf-2024/web/snapp_cat.md
         - Snapp fal: 2024/Snapp-ctf-2024/web/snapp_fal.md
+        - welcome: 2024/Snapp-ctf-2024/web/welcome.md
       - forensics:
         - Snapp Report: 2024/Snapp-ctf-2024/forensics/snapp_report.md
+      - osint:
+        - Snapp Records: 2024/Snapp-ctf-2024/osint/snapp_records.md
+        - Snapp Bounties: 2024/Snapp-ctf-2024/osint/snapp_bounties.md
+        - Snapp Customers: 2024/Snapp-ctf-2024/osint/snapp_customers.md
+        - Snapp Saving: 2024/Snapp-ctf-2024/osint/snapp_saving.md

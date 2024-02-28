@@ -1,4 +1,4 @@
-## Description
+## Welcome
 
 ```
 Welcome to SnappCTF web hackers!!!

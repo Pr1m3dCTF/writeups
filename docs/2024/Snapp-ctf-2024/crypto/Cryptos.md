@@ -1,4 +1,4 @@
-# 1. Challenge code / description
+# 1. Cryptos
 Discover the world of [**cryptos**](https://snappctf.com/tasks/cryptos_da1c562d0ed97239d393ba195d68edc3afa46f48.txz) in SNAPP CTF, solve challenges, and kindle your love for cryptography with exciting tasks.
 
 ```python

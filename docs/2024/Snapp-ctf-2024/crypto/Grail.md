@@ -1,4 +1,4 @@
-# 1. Challenge Code / Description
+# 1. Grail
 
 [**Grail**](https://snappctf.com/tasks/grail_d142a1301e9e48d2d166735c47cf61d451cb7826.txz) cryptosystem employs elementary math to safeguard valuable secrets. Despite strengths, it harbors vulnerabilities requiring careful consideration.
 

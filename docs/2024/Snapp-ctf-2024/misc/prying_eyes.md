@@ -10,4 +10,4 @@
 
 ## Solution
 
-After long hours of searching in cipher identifiers and searching for lambda and prying eyes, I decided to search for esoteric languages and lambda (`λ a cryptic operator in esoteric languages`) which led me to https://en.wikipedia.org/wiki/Esoteric_programming_language leading to https://en.wikipedia.org/wiki/Unlambda and then https://esolangs.org/wiki/Unlambda making sure of the name tried searching for online compilers and finally getting the flag from https://www.tutorialspoint.com/execute_unlambda_online.php
+After long hours of searching in cipher identifiers and searching for lambda and prying eyes, I decided to search for esoteric languages and lambda (`λ a cryptic operator in esoteric languages`) which led me to [here](https://en.wikipedia.org/wiki/Esoteric_programming_language) leading to [here](https://en.wikipedia.org/wiki/Unlambda) and then [here](https://esolangs.org/wiki/Unlambda) making sure of the name tried searching for online compilers and finally getting the flag from [this tools](https://www.tutorialspoint.com/execute_unlambda_online.php)
