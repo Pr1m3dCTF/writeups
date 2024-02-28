@@ -1,10 +1,11 @@
-site_name: pr1m3d writeups
-site_url: https://Pr1m3dCTF.github.io/writeups
+site_name: "Pr1m3d CTF writeups"
+site_url: "https://Pr1m3dCTF.github.io/writeups"
+site_description: "Pr1m3d CTF Team writeups"
+site_author: "Pr1m3d CTF Team"
 repo_name: 'Pr1m3dCTF/writeups'
 edit_uri: 'blob/master/docs/'
 repo_url: 'https://github.com/Pr1m3dCTF/writeups'
-site_description: Pr1m3d CTF Team writeups
-site_author: Pr1m3d CTF Team
+
 
 theme:
   name: material
