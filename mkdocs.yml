@@ -3,7 +3,7 @@ site_url: https://Pr1m3dCTF.github.io/writeups
 repo_name: 'Pr1m3dCTF/writeups'
 edit_uri: 'blob/master/docs/'
 repo_url: 'https://github.com/Pr1m3dCTF/writeups'
-
+site_description: Pr1m3d Team writeups
 
 theme:
   name: material
