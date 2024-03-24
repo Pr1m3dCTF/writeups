@@ -135,7 +135,7 @@ if we look at the man page of ecm we see we can use it for special purposes like
 
 ![Pasted image 20240224233240.png](./Pasted image 20240224233240.png)
 
-how to use ecm for our goal, if we look at **Two-stage variant** of this [link](https://en.wikipedia.org/wiki/Pollard%27s_p_%E2%88%92_1_algorithm) we see that there is another variant for pollard p-1 algorithm which are for composite numbers that their prime factors `p-1` have two different boundaries for their prime factors one is B1 an the other is B2. if we look at the man page of ecm it implements this utility by providing two boundaries `B1` and `B2`. because we only have one boundary here (`2**32`) we can put equal value for both of them and use it for our goal
+how to use ecm for our goal, if we look at **Two-stage variant** of this [link](https://en.wikipedia.org/wiki/Pollard%27s_p_%E2%88%92_1_algorithm#Two-stage_variant) we see that there is another variant for pollard p-1 algorithm which are for composite numbers that their prime factors `p-1` have two different boundaries for their prime factors one is B1 an the other is B2. if we look at the man page of ecm it implements this utility by providing two boundaries `B1` and `B2`. because we only have one boundary here (`2**32`) we can put equal value for both of them and use it for our goal
 
 so we're gonna use ecm with two equal boundaries
 ```bash
@@ -154,7 +154,7 @@ Report your potential champion to Paul Zimmermann <zimmerma@loria.fr>
 ![Pasted image 20240224235930.png](./Pasted image 20240224235930.png)
 
 excellent, we found the prime factor `p` and a composite factor which is `q**2`<br>
-now let's write our final code to decrypt the flag. To be honest there is no nee to calculate `q`. with just `p` and its relevant `d` you can find the flag because this is a `3-prime` variant of RSA.
+now let's write our final code to decrypt the flag. To be honest there is no need to calculate `q`. with just `p` and its relevant `d` you can find the flag because this is a `3-prime` variant of RSA.
 
 ```bash
 echo 60271408980729933877006968813908832767217070740159093498648400768736607939292481938381401022966688543630910474432361244613651991411572432214753910349772891370476918909077112530540621911383966658026593134345274324134753562637349391036182588852497718523479144409580717389609520235592399501427008877619567949880750992502426829388092423290210227355740274649904830512823177150165653995357199403968315206581509860688738386215498703336824919554943205899149182547563125887 | ecm -pm1 4294967296 4294967296
