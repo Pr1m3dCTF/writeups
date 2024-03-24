@@ -1,0 +1,7 @@
+mkdocs
+mkdocs-material
+mkdocs-glightbox
+mkdocs-material[imaging]
+pillow
+cairosvg
+cairocffi
