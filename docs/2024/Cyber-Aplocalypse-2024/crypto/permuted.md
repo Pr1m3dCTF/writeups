@@ -260,7 +260,7 @@ and here is order of g:
 3311019189498977856900
 ```
 
-before we explain our solution, let's define these terms
+tbh there is no need to calculate the order of `g` _lol_, but anyway. before we explain our solution, let's define these terms
 
 $X_i$ is period or order of element $g[i]$ if:
 
@@ -272,11 +272,11 @@ $g^{X_i}[i] = e[i] \quad for \quad i=0,1,2,...,n-1$
 $Y_i$ is distance of element $g[i]$ from $A[i]$ if:
 
 <center>
-$g^{X_i}[i] = A[i] \quad for \quad i=0,1,2,...,n-1$
+$g^{Y_i}[i] = A[i] \quad for \quad i=0,1,2,...,n-1$
 </center>
 
 
-tbh there is no need to calculate the order of `g` _lol_, but anyway. now we have the order and we should see how much distance each element of `g` has from its coresponding element in `A`. The reason that we wanna mesaure this distance is to find secret value `a` or `b`, but how these are related? we need to find just one of them so I pick `a`. we know that `a` and `b` are a large value(they should be) and each element of `g`'s period (the periods array we calculated in previous python code) are less than `a` or `b`. we have `n` equations like this
+now we have the order and we should see how much distance each element of `g` has from its coresponding element in `A`. The reason that we wanna mesaure this distance is to find secret value `a` or `b`, but how these are related? we need to find just one of them so I pick `a`. we know that `a` and `b` are a large value(they should be) and each element of `g`'s period (the periods array we calculated in previous python code) are less than `a` or `b`. we have `n` equations like this
 
 <center>
 $a \equiv Y[i] \mod{X[i]} \quad for \quad i=0,1,2,...,n-1$
@@ -439,10 +439,11 @@ print(f"aes key : {key.hex()}")
 
 # Flag
 Here is the flag
-
 ```
 HTB{w3lL_n0T_aLl_gRoUpS_aRe_eQUaL_!!}
 ```
 
 **AUTHOR**:
 > pi3 / Pr1m3d Team
+
+Great thanks to our friend Ehsan for helping us to solve this challenge <3
