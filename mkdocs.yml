@@ -103,3 +103,7 @@ nav:
     - Cyber Apocalypse 2024:
       - crypto:
         - Permuted: 2024/Cyber-Aplocalypse-2024/crypto/permuted.md
+      - blockchain:
+        - Lucky Facucet: 2024/Cyber-Aplocalypse-2024/blockchain/luckyfaucet.md
+        - Russian Roulette: 2024/Cyber-Aplocalypse-2024/blockchain/russianroulette.md
+        - Ledger Heist: 2024/Cyber-Aplocalypse-2024/blockchain/ledgerheist.md
